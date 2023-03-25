@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hangman.MainPage">
+
+   <Grid RowDefinitions=".6*,.4*">
+       <VerticalStackLayout BackgroundColor="White">
+
+            <Label FontAttributes="Bold"
+              HorizontalOptions="Center"
+              Text="Errors: 0 of 6" />
+        
+           <Image Source="img0.jpg" HeightRequest="200" />
+           <Label FontSize="40"
+                  HorizontalOptions="Center"
+                  Text="{Binding Spotlight}"
+                  VerticalOptions="Center"
+                  TextColor="Black"
+                  />
+
+           <Label FontSize="Large"
+                  HorizontalTextAlignment="Center"
+                  Text="You Lost!"
+                   TextColor="Black"
+                  />
+
+           <Button HorizontalOptions="Center"
+                   Text="Reset"
+                   WidthRequest="100"
+                   />
+
+       </VerticalStackLayout>
+
+       <FlexLayout Grid.Row="1" Wrap="Wrap" JustifyContent="SpaceEvenly" BackgroundColor="White">
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+           <Button HeightRequest="50" WidthRequest="50"
+                   BackgroundColor="Navy"
+                   Text="A"/>
+
+       </FlexLayout>
+
+
+   </Grid>
+
+</ContentPage>
+
